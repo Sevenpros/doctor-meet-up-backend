@@ -17,3 +17,5 @@ doctor2 = Doctor.create(first_name: "Alexa", last_name: "Smith", specialization:
 
 booking1 = Booking.create(date: "2021-12-02", time: "10:00", city: "London", disease_desc: "I have a headache", user_id: user1.id, doctor_id: doctor1.id)
 booking2 = Booking.create(date: "2021-12-02", time: "11:00", city: "London", disease_desc: "I have a fever", user_id: user2.id, doctor_id: doctor2.id)
+booking2 = Booking.create(date: "2021-12-02", time: "11:00", city: "London", disease_desc: "I have a some desease", user_id: user2.id, doctor_id: doctor1.id)
+booking2 = Booking.create(date: "2021-12-02", time: "11:00", city: "London", disease_desc: "I have a heatache", user_id: user2.id, doctor_id: doctor2.id)

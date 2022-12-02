@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
 
   # GET /bookings
   def index
-    @bookings = Booking.all
+    @bookings = Booking.where(user_id: params[:user_id])
 
     render json: @bookings
   end
