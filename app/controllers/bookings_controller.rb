@@ -5,7 +5,7 @@ class BookingsController < ApplicationController
   def index
     @bookings = Booking.where(user_id: params[:user_id])
 
-    render json: @bookings
+    render json: @bookings, include: [:doctor]
   end
 
   # GET /bookings/1

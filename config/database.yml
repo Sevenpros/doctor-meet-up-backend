@@ -25,7 +25,7 @@ development:
   <<: *default
   database: doctor-meet-up-backend_development
   username: postgres
-  password: <%= ENV["DATABASE_PASSWORD"] %>
+  password: Ambuk.85
   port: 5432
   host: 127.0.0.1
 
@@ -63,7 +63,7 @@ test:
   <<: *default
   database: doctor-meet-up-backend_test
   username: postgres
-  password: <%= ENV["DATABASE_PASSWORD"] %>
+  password: Ambuk.85
   port: 5432
   host: 127.0.0.1
 
@@ -92,4 +92,4 @@ production:
   <<: *default
   database: doctor-meet-up-backend_production
   username: doctor-meet-up-backend
-  password: <%= ENV["doctor-meet-up-backend_DATABASE_PASSWORD"] %>
+  password: Ambuk.85
