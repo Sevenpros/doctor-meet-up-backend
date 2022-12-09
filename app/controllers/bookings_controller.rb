@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
 
     if @booking.save
-      render json: @booking, status: :created, location: @booking
+      render json: @booking, status: :created
     else
       render json: @booking.errors, status: :unprocessable_entity
     end
@@ -42,11 +42,11 @@ class BookingsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_booking
-    @booking = Booking.find(params[:id])
+    @booking = Booking.includes(:doctor).find(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
   def booking_params
-    params.require(:booking).permit(:date, :time, :city, :disease_desc)
+    params.require(:booking).permit(:date, :time, :city, :disease_desc, :doctor_id, :user_id)
   end
 end
