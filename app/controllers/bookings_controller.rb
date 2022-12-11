@@ -5,7 +5,11 @@ class BookingsController < ApplicationController
   def index
     @bookings = Booking.where(user_id: params[:user_id])
 
+    if(@bookings.size > 0)
     render json: @bookings, include: [:doctor]
+    else
+      raise JsonapiErrorsHandler::Errors::NotFound
+    end
   end
 
   # GET /bookings/1

@@ -1,5 +1,5 @@
 class DoctorsController < ApplicationController
-  before_action :set_doctor, only: %i[show update destroy]
+  # before_action :set_doctor, only: %i[show update destroy]
 
   # GET /doctors
   def index
@@ -10,8 +10,11 @@ class DoctorsController < ApplicationController
 
   # GET /doctors/1
   def show
-    @doctor = Doctor.where(id: params[:id])
+
+    @doctor = Doctor.find(params[:id])
     render json: @doctor
+  rescue ActiveRecord::RecordNotFound
+    raise JsonapiErrorsHandler::Errors::NotFound
   end
 
   # POST /doctors
@@ -25,18 +28,14 @@ class DoctorsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /doctors/1
-  def update
-    if @doctor.update(doctor_params)
-      render json: @doctor
-    else
-      render json: @doctor.errors, status: :unprocessable_entity
-    end
-  end
 
   # DELETE /doctors/1
   def destroy
+    @doctor = Doctor.find(params[:id])
     @doctor.destroy
+    render json: {message: "doctor deleted"}
+  rescue ActiveRecord::RecordNotFound
+    raise JsonapiErrorsHandler::Errors::NotFound
   end
 
   private

@@ -1,0 +1,136 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/doctors":
+    post:
+      summary: Creates a doctor
+      tags:
+      - Doctors
+      parameters: []
+      responses:
+        '201':
+          description: doctor created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+                city:
+                  type: string
+                phone:
+                  type: integer
+                email:
+                  type: string
+                bio:
+                  type: string
+                specialization:
+                  type: string
+                photo:
+                  type: string
+              required:
+              - first_name
+              - email
+    get:
+      summary: List All doctors
+      tags:
+      - Doctors
+      responses:
+        '200':
+          description: doctors displayed
+  "/doctors/{id}":
+    get:
+      summary: Retrieves a doctor
+      tags:
+      - Doctors
+      - Another Tag
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: doctor found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  first_name:
+                    type: string
+                  last_name:
+                    type: string
+                  city:
+                    type: string
+                  phone:
+                    type: integer
+                  email:
+                    type: string
+                  bio:
+                    type: string
+                  specialization:
+                    type: string
+                  photo:
+                    type: string
+                required:
+                - email
+                - first_name
+                - last_name
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  first_name:
+                    type: string
+                  last_name:
+                    type: string
+                  city:
+                    type: string
+                  phone:
+                    type: integer
+                  email:
+                    type: string
+                  bio:
+                    type: string
+                  specialization:
+                    type: string
+                  photo:
+                    type: string
+                required:
+                - email
+                - first_name
+                - last_name
+        '404':
+          description: doctor not found
+    delete:
+      summary: Delete a doctor
+      tags:
+      - Doctors
+      - Another Tag
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: doctor deleted
+        '404':
+          description: blog not found
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
