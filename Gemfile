@@ -9,13 +9,13 @@ gem 'rails', '~> 7.0.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
-
+gem 'rswag'
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
-
+gem 'rails-controller-testing'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
-
+gem 'jsonapi_errors_handler', '~> 0.6.0'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -40,6 +40,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do

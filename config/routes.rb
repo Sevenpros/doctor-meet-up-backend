@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :doctors, only: [:new, :create, :index, :show]
+  mount Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Api::Engine => '/api-docs'
+  resources :doctors, only: [:new, :create, :index, :show, :destroy]
   resources :users, only: [:new, :create, :index] do
     resources :bookings, only: [:new, :index, :show, :create, :destroy]
   end
