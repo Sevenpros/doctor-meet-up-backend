@@ -10,7 +10,6 @@ class DoctorsController < ApplicationController
 
   # GET /doctors/1
   def show
-
     @doctor = Doctor.find(params[:id])
     render json: @doctor
   rescue ActiveRecord::RecordNotFound
@@ -28,12 +27,11 @@ class DoctorsController < ApplicationController
     end
   end
 
-
   # DELETE /doctors/1
   def destroy
     @doctor = Doctor.find(params[:id])
     @doctor.destroy
-    render json: {message: "doctor deleted"}
+    render json: { message: 'doctor deleted' }
   rescue ActiveRecord::RecordNotFound
     raise JsonapiErrorsHandler::Errors::NotFound
   end

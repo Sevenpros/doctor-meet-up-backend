@@ -4,6 +4,71 @@ info:
   title: API V1
   version: v1
 paths:
+  "/users/1/bookings":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: integer
+    post:
+      summary: create booking
+      tags:
+      - Bookings
+      parameters: []
+      responses:
+        '201':
+          description: booking created
+        '422':
+          description: booking must be valid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                time:
+                  type: string
+                city:
+                  type: string
+                disease_desc:
+                  type: string
+                doctor_id:
+                  type: integer
+                user_id:
+                  type: integer
+              required:
+              - date
+              - city
+    get:
+      summary: list bookings
+      tags:
+      - Bookings
+      responses:
+        '200':
+          description: successful
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    date:
+                      type: date
+                    time:
+                      type: text
+                    city:
+                      type: string
+                    disease_desc:
+                      type: text
+                    doctor_id:
+                      type: integer
+                    user_id:
+                      type: integer
   "/doctors":
     post:
       summary: Creates a doctor
