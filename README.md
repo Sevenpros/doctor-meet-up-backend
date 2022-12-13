@@ -32,7 +32,7 @@
 - [📝 License](#license)
 
 
-# 📖 [DOCTOR-MEET-UP-BACKEND] [FRONT END APP](https://github.com/Sevenpros/hello-react-front-end) <a name="about-project"></a>
+# 📖 [DOCTOR-MEET-UP-BACKEND] [BACKEND APP](https://github.com/Sevenpros/doctor-meet-up-backend) <a name="about-project"></a>
 
 **[DOCTOR-MEET-UP-BACKEND]** is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors, users are allow to add or remove doctor from the list.
 
@@ -60,7 +60,7 @@
 
 ### Key Features <a name="key-features"></a>
 
--### Key Features
+- ### Key Features
 
 - [Log in user]
 - [DOCTOR LIST, BOOKING LIST]
@@ -75,7 +75,7 @@
 - API DOCUMENTATIONS
   [API docs](http://127.0.0.1:3001/api-docs/index.html)
 
-  [front-end Repo](https://github.com/Sevenpros/doctor-meet-up-frontend)
+  [Front-end Repo](https://github.com/Sevenpros/doctor-meet-up-frontend)
   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -110,16 +110,9 @@ Clone this repository to your desired folder:
 
 - Initialize your project with Git.
 - Make sure that your project is using the right port setup.
-- Run npm start and visit http://127.0.0.1:3001/ in your browser!
-
-
--Install the required dependencies with:
+-Install the required dependencies/gems with:
 
 `bundle install`
-
--Install npm dependencies with:
-
-`npm install`
 
 ### Usage
 
@@ -131,7 +124,7 @@ To run the project, execute the following command:
 `rails db:migrate`
 
 - With Ruby on Rails and PostgreSQL installed in your environment, you can run rails server to run the website.
-`./bin/dev`
+`rails s`
 ### Run tests
 
 To run tests, run the following command:
