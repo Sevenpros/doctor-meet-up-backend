@@ -169,8 +169,8 @@ LinkedIn: [@Esmatullah Ahamdzai](https://www.linkedin.com/in/esmatullah-ahmadzai
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[proper authentication for user login]**
-- []  **[cancelling bookings]**
+- **[proper authentication for user login]**
+- **[cancelling bookings]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
