@@ -1,86 +1,151 @@
-# DOCTOR-MEET-UP-BACKEND
+<a name="DOCTOR-MEET-UP-BACKEND"></a>
 
-DOCTOR-MEET-UP-BACKEND- App is a Ruby On Rail API web application that provide API endpoint for users to book an appointment with their Doctors, users can add or remove doctor from the page
 
-## Built With
+<div align="center">
+
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Microverse README Template</b></h3>
+
+</div>
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+
+# 📖 [DOCTOR-MEET-UP-BACKEND] [FRONT END APP](https://github.com/Sevenpros/hello-react-front-end) <a name="about-project"></a>
+
+**[DOCTOR-MEET-UP-BACKEND]** is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors, users are allow to add or remove doctor from the list.
+
+
+## 🛠 Built With <a name="built-with">## Built With 
 - Ruby on Rails
 - Postgresql
-- Databases
+- Databases</a>
 
-### Key Features
+### Tech Stack <a name="tech-stack">Git, Rails, Rspec, Postgresql</a>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="hhttps://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+-### Key Features
 
 - [Log in user]
-- [DOCTOR LIST , BOOKING LIST]
-- [Add Doctor , Delete Doctor]
-- [Functionality to book a Doctor by the users using doctor profile]
+- [DOCTOR LIST, BOOKING LIST]
+- [Add Doctor, Delete Doctor]
+- [Functionality to book a Doctor by the users using a doctor profile]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Video Demo
-[Video Link](yet to be upload)
-
-# Live Presentation link
-[Live Link](yet to be deployed)
-
-# Front-end Repo
-[Front-end Repo Link](https://github.com/Sevenpros/doctor-meet-up-frontend)
-## Getting Started
--To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-- A Command Line Interface.
-- Having Ruby installed.
-- Setup Rails
-- Postgresql
-- A code editor like Visual Studio Clone.
-- Git installed.
-- 
-
-To check if you have Git, Postgres and Ruby installed you can use the commands below:
-
- ```sh
-   $ git --version
-   $ ruby --version && irb
-   ```
-If you don't have Ruby, you can find a complete list of ways to install Ruby, including using third-party tools like rvm, see:
-
-(https://www.ruby-lang.org/en/downloads/)
-### 🛠️ Installation & Set Up
-
-If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
-
-
-- Open the [Repository Link](https://github.com/Sevenpros/doctor-meet-up-backend) of this project in GitHub.
-
-- Once the files are on your machine, open capstone-ruby folder in [Visual Studio Code](https://code.visualstudio.com/).
-
-### Install
- Start by cloning the repository.
- 
-- git@github.com:Sevenpros/doctor-meet-up-backend.git
-
-  Navigate to the created folder.
-
-- Initialize your project with Git.
-- Make sure that your project is is using the right port set up.
-- Run Npm start and visit http://127.0.0.1:3001/ in your browser!
-
-  ### run the following in your terminal:
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - API DOCUMENTATIONS
   [API docs](http://127.0.0.1:3001/api-docs/index.html)
+
+  [front-end Repo](https://github.com/Sevenpros/doctor-meet-up-frontend)
   
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+- IDE to edit and run the code (We use Visual Studio Code 🔥).
+- Git to versioning your work.
+- Postgresql
+- A Command Line Interface.
+- Having Ruby installed.
+- Setup Rails
+
+### Setup
+
+Clone this repository to your desired folder:
+
+`gh repo clone Sevenpros/hello-rails-back-end`
+
+- Then switch to the project folder by the bellow query:
+
+`cd doctor-meet-up-backend`
+
+### Install
+
+- Initialize your project with Git.
+- Make sure that your project is using the right port setup.
+- Run npm start and visit http://127.0.0.1:3001/ in your browser!
+
+
+-Install the required dependencies with:
+
+`bundle install`
+
+-Install npm dependencies with:
+
+`npm install`
+
 ### Usage
---Once you have your repository cloned on your machine, feel free to modify it as needed.
-- To add your own page
 
-### Testing with Rspec and Capybara
-  - In your terminal run > 
-     bundle exec rspec
-  - run rspec spec
+To run the project, execute the following command:
+- Before running the below commands update config/database.yml with your local DB credentials. Then run:
 
-  
-## Author(s)
+`rails db:create`
+
+`rails db:migrate`
+
+- With Ruby on Rails and PostgreSQL installed in your environment, you can run rails server to run the website.
+`./bin/dev`
+### Run tests
+
+To run tests, run the following command:
+- Run `bundle install`
+- Run `bundle exec RSpec spec`
+### Deployment
+
+You can deploy this project using:
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 👥 Author(s) <a name="authors"></a>
 
 ## Author1
 👤 **Seth Bizimana**
@@ -105,35 +170,61 @@ GitHub: [@Esmatullah Ahamdzai](https://github.com/eaesmat)
 Twitter: [@Esmatullah Ahamdzai](https://twitter.com/ea_ahmadzai)
 LinkedIn: [@Esmatullah Ahamdzai](https://www.linkedin.com/in/esmatullah-ahmadzai/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[proper authentication for user login]**
+- []  **[cancelling bookings]**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
-
 Feel free to check the [issues page](https://github.com/Sevenpros/doctor-meet-up-backend/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ⭐️ Show your support <a name="support"></a>
 
 - Give a ⭐ if you like this project!
 
-## Acknowledgments
+If you like this project, you are all welcome to support and make any contributions
+Feel free to check the [issues page](https://github.com/Sevenpros/doctor-meet-up-backend/issues).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Web Design
-`All the template colors, font, and layout distribution for the whole project were designed by Murat Korkmaz
- A link to the project can be found here. Check Murat Korkmaz
+`All the template colors, font, and layout distribution for the whole project were designed by Murat Korkmaz on Behance
+ A link to the project can be found here. Check [Murat Korkmaz](https://www.behance.net/muratk)
  for more amazing GUI and Graphic designs!`
 
-- Hat tip to all documentations used
+- Hat tip to all documentation used
 - Inspiration 
 
-## ❓ FAQ
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### [Question_1] Do I need to have a program to manage the database. 
 
-##### [Answer_1] Yes you need postgesql or sqllite ,check installation online.
+## ❓ FAQ <a name="faq"></a>
 
-#### [Question_2] Can I access the owner database .
 
-##### [Answer_2]No because its on their local database .
+- **[can_this_work_in_chrome]**
 
-## 📝 License
-This project is MIT licensed.
+  - [yes]
+
+- **[is_this_compatible_with_windows]**
+
+  - [Yes]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
