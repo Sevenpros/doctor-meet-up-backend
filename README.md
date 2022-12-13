@@ -3,7 +3,9 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="https://img.shields.io/badge/Microverse-blueviolet
+" alt="logo" width="140"  height="auto" />
+
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -193,7 +195,8 @@ Feel free to check the [issues page](https://github.com/Sevenpros/doctor-meet-up
 
 - Web Design
 `All the template colors, font, and layout distribution for the whole project were designed by Murat Korkmaz on Behance
- A link to the project can be found here. Check [Murat Korkmaz](https://www.behance.net/muratk)
+ A link to the project can be found here.
+ - [Murat Korkmaz](https://www.behance.net/muratk)
  for more amazing GUI and Graphic designs!`
 
 - Hat tip to all documentation used
