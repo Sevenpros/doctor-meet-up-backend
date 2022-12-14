@@ -1,4 +1,4 @@
 class User < ApplicationRecord
   has_many :bookings
-  has_many :doctors, through: :bookings
+  validates :name, presence: true
 end
