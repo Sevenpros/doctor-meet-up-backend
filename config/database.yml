@@ -23,13 +23,17 @@ default: &default
 
 development:
   <<: *default
-  database: doctor_meet_up_backend_development
+  database: doctor-meet-up-backend_development
+  username: 
+  password: 
+  port: 5432
+  host: 127.0.0.1
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: doctor_meet_up_backend
+  #username: hello_rails_back_end
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +61,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: doctor_meet_up_backend_test
+  database: doctor-meet-up-backend_test
+  username: postgres
+  password:
+  port: 5432
+  host: 127.0.0.1
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +90,6 @@ test:
 #
 production:
   <<: *default
-  database: doctor_meet_up_backend_production
-  username: doctor_meet_up_backend
-  password: <%= ENV["DOCTOR_MEET_UP_BACKEND_DATABASE_PASSWORD"] %>
+  database: doctor-meet-up-backend_production
+  username: doctor-meet-up-backend
+  password: 
