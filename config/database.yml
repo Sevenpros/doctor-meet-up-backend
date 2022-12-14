@@ -63,7 +63,7 @@ test:
   <<: *default
   database: doctor-meet-up-backend_test
   username: postgres
-  password: Ambuk.85
+  password:
   port: 5432
   host: 127.0.0.1
 
