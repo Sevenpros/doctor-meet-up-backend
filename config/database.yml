@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: doctor-meet-up-backend_development
- username: postgres
+  username: postgres
   password: <%= ENV["DATABASE_PASSWORD"] %>
   port: 5432
   host: 127.0.0.1
