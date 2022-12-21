@@ -16,7 +16,7 @@
 # end
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'localhost:3000' # <- Create React App port URL
+      origins 'https://meetup.sethpro.com/' # <- Create React App port URL
   
       resource '*',
         headers: :any,
